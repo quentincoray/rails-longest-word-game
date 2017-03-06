@@ -1,0 +1,35 @@
+<div class="container">
+<h1>Time to reveal how talented you are !</h1>
+</div>
+
+<img src="http://static.directmatin.fr/sites/default/files/styles/image_880_495/public/000_Par6867405.jpg?itok=ra33PpLO" class="resized">
+
+<p class = "bar"> <img src="https://pbs.twimg.com/profile_images/378800000822867536/3f5a00acf72df93528b6bb7cd0a4fd0c.jpeg" class="mini"> Woooooow you just broke the game ! <img src="https://pbs.twimg.com/profile_images/378800000822867536/3f5a00acf72df93528b6bb7cd0a4fd0c.jpeg" class="mini"></p>
+
+<div class="wrapper">
+<table style="width:100%; padding: 20px">
+<tr>
+<td>
+<h2>Time spent :</h2>
+<span class="outcome"><%= @total_time %></span> <span>seconds</span>
+</td>
+<td>
+<h2>Your number of letters :</h2>
+<span class="outcome"><%= @letters %></span> <span>letters</span>
+</td>
+<td>
+<h2>Your word :</h2>
+<span class="outcome"><%= @grid.join("") %></span>
+</td>
+<td>
+<h2>Your score is :</h2>
+<span class="outcome"><%= @score %></span> <span>points</span>
+</td>
+</tr>
+</table>
+</div>
+</div>
+
+<p>>> <%= link_to "Bring me back to the home page", "/game" %> <<</p>
+
+<div class="container"><h1>*************</h1></div>

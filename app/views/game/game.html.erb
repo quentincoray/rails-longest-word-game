@@ -1,0 +1,20 @@
+<div class="container">
+<h1>The Longest Word</h1>
+</div>
+<p>Are you a true Master of Words ? Let's see !</p>
+
+<img src = "http://a404.idata.over-blog.com/0/20/49/74/emissions2010/des-chiffres-lettres-marie-laurence-harot.jpg">
+
+<h2>Here is the grid :</h2>
+<div class="grid">
+<%= @generated_grid %>
+</div>
+
+<h2>Type in your best word :</h2>
+<form action="/score" method="get">
+  <label for="question">Your word</label>
+  <input type="text" id="attempt" name="grid" placeholder="Give it your best shot !">
+  <input type="hidden" id="time" name="start_time" value="<%= @start_time %>">
+  <input type="submit" value="Go on!">
+</form>
+

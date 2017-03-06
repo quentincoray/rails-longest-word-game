@@ -1,0 +1,85 @@
+// Place all the styles related to the game controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+  background-color: #F3F3F3;
+  font-family: "Open-Sans", sans-serif;
+  text-align: center;
+}
+
+.container {
+  background-color: black;
+  color: white;
+  padding: 5px;
+}
+
+.grid {
+  background-color: black;
+  color: white;
+  font-weight: bolder;
+  padding: 4px;
+  font-size: 36px;
+}
+
+.resized {
+  max-width: 400px;
+  padding: 10px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.outcome {
+  color:#C22222;
+  font-weight: bolder;
+  font-size: 30px;
+}
+
+.outcome:hover {
+  color:#C22222;
+  font-weight: bolder;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.mini {
+  max-width: 80px;
+  border-radius: 50%;
+  padding: 4px;
+}
+
+.rainbow-text {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: -webkit-gradient(linear,  left top,  left bottom,
+        color-stop(0.00, red),
+        color-stop(16%, orange),
+        color-stop(32%, yellow),
+        color-stop(48%, green),
+        color-stop(60%, blue),
+        color-stop(76%, indigo),
+        color-stop(1.00, violet));
+  }
+
+.bar {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48px;
+  color: white;
+  background: -webkit-linear-gradient(left,red,orange,yellow,green,blue,indigo,violet);
+}
